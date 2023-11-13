@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def main(req):
+def index(req):
     return render(req, "index.html")
+
+def beranda(req):
+    return render(req, "beranda.html")
