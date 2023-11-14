@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from .views import beranda,index
 
 urlpatterns = [
-    path('web/', views.web, name='web'),
+    path('', beranda, name='beranda.html'),
+    path('', index, name='index.html'),
 ]
